@@ -1,0 +1,66 @@
+# Python: Repaso de conocimientos
+
+
+#Ejercicios de Variables Python
+
+#Ejercicio 1 Escribir ‘Hola Mundo!‘ por pantalla.
+print('Hola mundo!')
+
+#Ejercicio 2
+a = 2
+a = a*2
+a = a / 1.5
+a = int(a)
+print(a)
+print(type(a))
+
+#or
+
+num_a = 4
+int(num_a)
+res = (num_a*2)/1.5
+print(num_a,type(num_a))
+
+
+#Ejercicio 3
+#Paso 1
+ci = 100000
+cf = ci*(1+0.02)**10
+print(cf)
+
+##Paso 2
+ci = float(input("monto inicial"))
+i = float(input("tasa de interes(Ingresar valor con coma; Ejemplo 0.n con n igual al valor del porcentaje sin el signo %)"))
+n = float(input("Años "))
+print("Monto final sera",ci*(1+i)**n)
+
+#or
+
+ci = 100000
+Interes = 0.02
+ciclos = 18
+
+ICompuesto = ci*(1+Interes)**ciclos
+print("El valor final, con un capital de {ci}, un interes de {interes} con ña cantidad de años {ciclos} es")
+print(ICompuesto)
+#Ejercicio 4
+resistencia = 3
+intencidad = 4
+
+voltaje = resistencia*intencidad
+print(voltaje)
+
+#Ejercicio 6
+imp = 120
+cli = 20
+CTR = (cli/imp)*100
+print(CTR)
+
+#Ejercicios de Condicionales
+
+#Ejercicio 1 
+a = int(input('cuantos años tenes?'))
+if a > 18:
+    print("mayor de edad")
+else:
+    print("menos de edad")
