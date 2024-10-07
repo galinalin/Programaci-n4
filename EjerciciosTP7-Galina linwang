@@ -59,8 +59,50 @@ print(CTR)
 #Ejercicios de Condicionales
 
 #Ejercicio 1 
-a = int(input('cuantos años tenes?'))
-if a > 18:
-    print("mayor de edad")
+edad = int(input("Decime tu edad y te digo si podes pasar:"))
+acompañado = str(input("Indica si esta acompañado con si o no:"))
+if edad >=18:
+    print('podes pasar')
 else:
-    print("menos de edad")
+    if acompañado =="si":
+        print('podes pasar')
+    else:
+        print('no podes pasar')
+
+#Ejercicio 2
+a = int(input("Dame un numero "))
+b = int(input("Dame otro numero"))
+Hipotenusa = (a**2 + b**2)**1/2                     
+if a <=0:
+    print('Error')
+else:
+    if b <=0:
+        print('Error')
+print(Hipotenusa)
+
+#Ejercicio 3
+pword = "Gali1234"
+ingreso = str(input("Ingrese la contraseña: "))
+if ingreso == pword:
+    print('Bienvenid@...')
+else:
+    print('Ordenador bloqueado. Contraseña incorrecta')
+
+#Ejercicio 4
+edad = int(input("Decime tu edad:"))
+Trabajo = str(input("Indica si esta trabajo con si o no:"))
+if edad >=18:
+    if Trabajo == "si":
+        print('Paga el 100%')
+    else:
+        print('Paga el 75%')
+else:
+    if Trabajo == "si" :
+        print('paga el 95%')
+    else:
+        print('pago el 50%')
+
+#Ejercicio 5
+
+
+    
